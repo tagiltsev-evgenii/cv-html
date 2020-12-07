@@ -1,0 +1,202 @@
+section#education {
+    // display: block;
+
+    h1 {
+        margin-top: 147px;
+        margin-bottom: 30px;
+    }
+}
+
+.school {
+    display: flex;
+    margin-bottom: 20px;
+
+    h3, h4 {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    p {
+        text-align: right;
+    }
+
+    h3 {
+        font-size: 28px;
+        color: #ffffff;
+        font-weight: 700;
+    }
+
+    h4 {
+        color: #AAB9E2;
+        font-weight: 300;
+        font-size: 24px;
+    }
+}
+
+.education__data {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #D0B3FF;
+        width: 3px;
+        height: 100%;
+    }
+}
+
+.job {
+    margin-bottom: 20px;
+
+    h3, h4 {
+        text-align: center;
+        width: 400px;
+    }
+
+    h3 {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+
+    h4, h5 {
+        color: #AAB9E2;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    h5 {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        font-weight: 300;
+        font-size: 22px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        list-style-type: none;
+
+        & > li {
+            margin-bottom: 10px;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border: 2px solid #AAB9E2;
+                margin-right: 20px;
+                border-radius: 12px;
+            }
+        }
+    }
+}
+
+.job.current {
+    .experience__data::before {
+        background-color: #FFFF64;
+    }
+}
+
+.experience__block {
+    margin-top: 10px;
+    display: flex;
+}
+
+.experience {
+    height: 70vh;
+    padding: 30px;
+    position: relative;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    color: #ffffff;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 1px;
+        background-color: #002564;
+        border-radius: 5px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #AAB9E2;
+    }
+
+    &:hover {
+        transition: all .59s linear;
+    
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+    }
+}
+
+.experience__date, .education__date{
+    max-width: 300px;
+    min-width: 200px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.experience__data {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #FF6494;
+        width: 3px;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .school {
+        display: block;
+    }
+
+    .job__section {
+        display: block;
+        h3, h4 {
+            width: 100%;
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4, h5 {
+            font-size: 18px;
+        }
+
+        ul {
+            font-size: 16px;
+
+            & > li::before {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .experience {
+        overflow-y: hidden;
+        height: 100%;
+    }
+
+    .experience__date, 
+    .education__date {
+        display: none;
+    }
+
+    .experience__block {
+        display: block;
+        width: 100%;
+    }
+}

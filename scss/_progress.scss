@@ -1,0 +1,120 @@
+.skills__main {
+    width: 100%;
+    & > h1 {
+        margin-bottom: 59px;
+    }
+}
+
+.skills__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills {
+    width: 50%;
+}
+
+.progress__bar {
+    width: 100%;
+    height: 24px;
+    border: 1px solid #fff;
+    margin-bottom: 60px;
+    border-radius: 12px;
+
+    & > span {
+        background-color: #FF6494;
+        display: block;
+        height: 100%;
+        transition: width .3s linear;
+        border-radius: 12px;
+        position: relative;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #FF6494;
+            border-radius: 12px;
+            z-index: -1;
+        }
+    
+        &::after {
+            transition: filter .2s linear;
+            filter: blur(15px);
+        }
+    }
+
+    &::after {
+        content: attr(data-title);
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 300;
+        display: block;
+        text-align: right;
+        margin-top: 10px;
+        padding-right: 10px;
+    }
+}
+
+.language__bar {
+    display: flex;
+}
+
+.language__bar ul {
+    color: rgba(255, 255, 255, 0);
+    list-style: none;
+    text-align: center;
+    // width: 100%;
+    margin-right: 10px;
+
+    & > li {
+        font-weight: 300;
+        display: inline-block;
+        margin-left: 18px;
+
+        &::before {
+            content: '';
+            position: relative;
+            display: block;
+            width: 10px;
+            height: 22px;
+            border: 2px solid #ffffff;
+            border-radius: 19px;
+            margin-bottom: 5px;
+        }
+    }
+    & > li.skill__selected {
+        position: relative;
+        &::before {
+            border: 3px solid #FF6494;
+            background-color: #FF6494;
+        }
+    }
+
+    & > li.level-visible {
+        color: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 580px) { 
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .languages {
+        margin-top: 56px;        
+    }
+
+    .language__bar > ul > li {
+        margin-left: 5px;
+    }
+}
+

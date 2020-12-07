@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background: linear-gradient(68deg, #013e92, #002564 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+main {
+    transition: transform .56s ease-out;
+}
+
+section, header {
+    max-width: 1285px;  
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 50px;
+}   
+
+h1 {
+    text-align: center;
+    font-size: 79px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    text-transform: uppercase;
+
+    span {
+        color: #ff6494;
+    }
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1;
+    color: #aab9e2;
+}
+
+p {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.btn__block {
+    position: relative;
+    display: flex;
+    margin-top: 44px;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    border: 2px solid #ff6494;
+    max-width: 280px;
+    font-size: 22px;
+    padding: 15px 60px;
+    overflow: hidden;
+    transition: 1s all ease;
+    margin-right: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        background-color: #ff6494;
+        height: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: .4s all ease-out;
+        z-index: -1;
+    }
+
+    &:hover::before {
+        height: 680%;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    section {
+        display: block;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .btn__block {
+        flex-direction: column;
+    }
+
+    .btn {
+        padding: 10px 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+@import 'menu';
+@import 'content';
+@import 'navigation';
+
+@import 'about-me';
+@import 'progress';
+@import 'experience';
+@import 'contact-me';

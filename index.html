@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- <meta name="viewport" content="width=1285"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <title>Eugene's CV - Evgenii Tagiltsev</title>
+</head>
+
+<body>
+
+    <!-- <header>
+        <div class="wrapper">
+            <div class="menu">
+                <h1>Eugene's <span>Lab</span></h1>
+            </div>
+        </div>
+    </header> -->
+
+    <nav class="navigation">
+        <ul class="navigation__bar">
+            <li class="active" onclick="manualScrollContent(0)">Basic information</li>
+            <li onclick="manualScrollContent(1)">About me</li>
+            <li onclick="manualScrollContent(2)">Languages & Skills</li>
+            <li onclick="manualScrollContent(3)">Education & Experience</li>
+            <li onclick="manualScrollContent(4)">Contact me</li>
+        </ul>
+    </nav>
+
+    <!-- -------------------------------------------------------------- -->
+
+    <main>
+        <section id="basic">
+            <div class="info">
+                <h1>Evgenii <span>Tagiltsev</span></h1>
+                <h2>Software Engineer, Qt/C++ Developer</h2>
+                <ul>
+                    <li>Age: <span>27</span></li>
+                    <li>Email: <span>tagiltsev.evgenii@gmail.com</span></li>
+                    <li>Phone: <span>+420 603 889 044</span></li>
+                    <li>Address: <span>Jihlava, Czech Republic, 58601</span></li>
+                    <li>Nationality: <span>Russian</span></li>
+                </ul>
+
+                <div class="btn__block">
+                    <a href="https://cloud.eugeneslab.net/index.php/s/JwE8nqGjqS8WWKE" class="btn">Download CV</a>
+                    <a href="#" class="btn" onclick="manualScrollContent(4)">Contact me</a>
+                </div>
+
+                <div class="social__media">
+                    <a href="https://www.linkedin.com/in/evgenii-tagiltsev-1052b515b/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+                </div>
+            </div>
+
+            <div class="photo">
+                <div class="photo__screw">
+                    <img src="./img/picture.jpg" alt="" class="photo___main">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="about_me">
+            <div class="about-me">
+                <h1>About <span>Me</span></h1>
+
+                <p>Hello and welcome to my website! My name is Evgenii Tagiltsev, I am a Qt/C++ Developer.<br>
+
+                    Find out more about my career, visions, and myself down below.<br>
+                    <br>
+                    Creating new things and improving myself every day are important aspects of my life - I try to
+                    follow new trends in IT and technology in connection with working on various projects.
+
+
+                    <br>
+                    In 2019, I moved to the Czech Republic. Before moving there, I had worked for an aerospace industry
+                    company in Russia where I gained 4-year-long experience with Qt/C++. After the moving, I have worked
+                    on some
+                    interesting projects focusing on game development and user interface design.<br>
+
+                    <br> Some of my strong points are flexibility, trustworthiness, ability to adapt, and working hard.
+                    <br>Challenging projects are welcome: If my knowledge is not wide enough, I will gladly learn new
+                    things. To quote Ernest Hemingway: "True nobility is being superior to your former self." That is
+                    why
+                    studying languages (English and Czech) on almost a daily basis is a must (in order to communicate
+                    better with you). Additionally, I have recently started exploring the area of web technologies.<br>
+
+                    <br>
+                    If technology, symbols and numbers, can help people to overcome their boundaries and simplify their
+                    problems, then the possibility to contribute at least a little bit is my main motivation to be a
+                    software engineer</p>
+            </div>
+        </section>
+
+
+        <!-- LANGUAGES & SKILLS -->
+        <section id="skills">
+
+            <div class="skills__main">
+                <h1>Languages & <span>skills</span></h1>
+
+                <div class="skills__block">
+
+                    <div class="skills">
+                        <div class="progress__bar" data-title="Qt/C++">
+                            <span style="width: 85%"></span>
+                        </div>
+                        <div class="progress__bar" data-title="QML">
+                            <span style="width: 40%"></span>
+                        </div>
+                        <div class="progress__bar" data-title="SQL">
+                            <span style="width: 30%"></span>
+                        </div>
+                        <div class="progress__bar" data-title="C++ STL">
+                            <span style="width: 10%"></span>
+                        </div>
+                        <div class="progress__bar" data-title="HTML/CSS">
+                            <span style="width: 20%"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="languages">
+                        <div class="language__bar">
+                            <ul>
+                                <li class="skill__selected">A1</li>
+                                <li class="skill__selected">A2</li>
+                                <li class="skill__selected">B1</li>
+                                <li class="skill__selected">B2</li>
+                                <li class="skill__selected">C1</li>
+                                <li class="skill__selected level-visible">C2</li>
+                            </ul>
+                            <p>Russian</p>
+                        </div>
+                        <div class="language__bar">
+                            <ul>
+                                <li class="skill__selected">A1</li>
+                                <li class="skill__selected">A2</li>
+                                <li class="skill__selected level-visible">B1</li>
+                                <li>B2</li>
+                                <li>C1</li>
+                                <li>C2</li>
+                            </ul>
+                            <p>English</p>
+                        </div>
+
+                        <div class="language__bar">
+                            <ul>
+                                <li class="skill__selected level-visible">A1</li>
+                                <li>A2</li>
+                                <li>B1</li>
+                                <li>B2</li>
+                                <li>C1</li>
+                                <li>C2</li>
+                            </ul>
+                            <p>Czech</p>
+                        </div>
+                    </div>
+
+        </section>
+
+        <!-- EDUCATION & EXPERIANCE -->
+        <section id="education" class="job__section">
+            <div>
+                <h1>Education & <span>experience</span></h1>
+                <div class="experience">
+                    <div class="school">
+                        <div class="education__date">
+                            <p>2011 - 2015</p>
+                        </div>
+                        <div class="education__data">
+                            <h3>Information Technology (Ba)</h3>
+                            <h4>Ural Federal University</h4>
+                        </div>
+                    </div>
+
+                    <div class="job">
+                        <h3>EXPERIMENTAL DEPARTMENT OF URAL FACTORY OF CIVIL AVIATION</h3>
+                        <h4>Engineer - programmer</h4>
+                        <div class="experience__block">
+                            <div class="experience__date">
+                                <p>November 2014</p>
+                                <p>March 2019</p>
+                            </div>
+
+                            <div class="experience__data">
+                                <h5>Responsibilities</h5>
+                                <ul>
+                                    <li>Developing custom-made programs based on customers' requirements</li>
+                                    <li>Developing alghorithms for task solving</li>
+                                    <li>Testing and debugging</li>
+                                    <li>Deploying applications to customers' devices and also supporting</li>
+                                    <li>Updating and upgrading applications</li>
+                                </ul>
+                                <h5>Projects</h5>
+                                <ul>
+                                    <li>Transfer of visual materials from aircrafts to a ground station control by
+                                        radiochannel</li>
+                                    <li>Creating a program for a microcontroller enabling a joystick manipulation
+                                    </li>
+                                    <li>A ground station control application designing flightplans, transmitting
+                                        plans
+                                        to
+                                        aircrafts by a radio channel, receiving telemetrical feedbackfrom aircraft
+                                    </li>
+                                    <li>Gathering diagnostic information from devices of an aircraft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job">
+                        <h3>DEMLABS INC.</h3>
+                        <h4>Qt/C++ Programmer</h4>
+                        <div class="experience__block">
+                            <div class="experience__date">
+                                <p>July 2019</p>
+                                <p>January 2020</p>
+                            </div>
+
+                            <div class="experience__data">
+                                <h5>Responsibilities</h5>
+                                <ul>
+                                    <li>Developing a GUI application based on prototypes</li>
+                                    <li>Developing a service application for connection with Cellframe Node</li>
+                                </ul>
+                                <h5>Projects</h5>
+                                <ul>
+                                    <li>Cellframe Dashboard</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job current">
+                        <h3>Redwood games</h3>
+                        <h4>Qt/C++ Programmer</h4>
+                        <div class="experience__block">
+                            <div class="experience__date">
+                                <p>January 2020</p>
+                                <p>April 2020</p>
+                            </div>
+
+                            <div class="experience__data">
+                                <h5>Responsibilities</h5>
+                                <ul>
+                                    <li>Fixing bugs "Plutocracy" game</li>
+                                </ul>
+                                <h5>Projects</h5>
+                                <ul>
+                                    <li>"Plutocracy" - PC Game</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT ME -->
+        <section id="contact-me">
+            <div class="contact__form">
+                <h1>Contact <span>Me</span></h1>
+                <form method="POST" action="https://formspree.io/tagiltsev.evgenii@gmail.com">
+                    <input id="name" name="name" type="text" placeholder="Your name" required="required">
+                    <input id="email" required="required" name="_replyto" type="email" placeholder="Your e-mail">
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
